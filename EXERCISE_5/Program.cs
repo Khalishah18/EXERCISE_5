@@ -14,6 +14,17 @@ namespace EXERCISE_5
             public Node next;
         }
 
+        class Queue
+        {
+            Node Lisa, Salsa;
+
+            public Queue()
+            {
+                Lisa = null;
+                Salsa = null;
+            }
+
+        }
         static void Main(string[] args)
         {
         }
