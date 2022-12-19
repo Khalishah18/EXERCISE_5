@@ -75,7 +75,7 @@ namespace EXERCISE_5
             {
                 Node curr;
                 curr = Lisa;
-                Console.WriteLine("The deleted number is: " + Lisa);
+                Console.WriteLine("The deleted number is: " + Lisa.number + Lisa.name);
                 Lisa = Lisa.next;
             }
 
@@ -90,7 +90,7 @@ namespace EXERCISE_5
                     Console.WriteLine("the number is the list are: ");
                     Node currNode;
                     for(currNode = Lisa; currNode != null; currNode = currNode.next)
-                        Console.WriteLine(" -" + currNode.number);
+                        Console.WriteLine(" -" + currNode.number + currNode.name);
                     Console.WriteLine();
                 }
             }
