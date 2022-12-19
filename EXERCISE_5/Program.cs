@@ -104,7 +104,16 @@ namespace EXERCISE_5
                         Console.WriteLine("c. display");
                         Console.WriteLine("d. Exit");
                         Console.WriteLine(" choice a-d : ");
-                        
+                        char ch = Convert.ToChar(Console.ReadLine());
+                        switch (ch)
+                        {
+                            case 'a':
+                                {
+                                    q.addNumb();
+                                }
+                                break;
+                            
+                        }
                     }
                 }
             }
