@@ -112,7 +112,16 @@ namespace EXERCISE_5
                                     q.addNumb();
                                 }
                                 break;
-                            
+                            case 'b':
+                                {
+                                    if (q.ListEmpty())
+                                    {
+                                        Console.WriteLine("List empty. ");
+                                        break;
+                                    }
+                                    q.delNumb();
+                                }
+                                break;
                         }
                     }
                 }
