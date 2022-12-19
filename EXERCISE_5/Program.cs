@@ -122,6 +122,12 @@ namespace EXERCISE_5
                                     q.delNumb();
                                 }
                                 break;
+                            case 'c':
+                                {
+                                    q.displayNumb();
+                                }
+                                break;
+
                         }
                     }
                 }
