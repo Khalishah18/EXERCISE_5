@@ -58,6 +58,13 @@ namespace EXERCISE_5
                 }
 
             }
+            public bool ListEmpty()
+            {
+                if (Lisa == null)
+                    return true;
+                else
+                    return false;
+            }
         }
         static void Main(string[] args)
         {
