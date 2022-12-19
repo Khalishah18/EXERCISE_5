@@ -65,6 +65,13 @@ namespace EXERCISE_5
                 else
                     return false;
             }
+
+            public bool delNumb()
+            {
+                Node curr;
+                curr = Lisa;
+                Lisa = Lisa.next;
+            }
         }
         static void Main(string[] args)
         {
