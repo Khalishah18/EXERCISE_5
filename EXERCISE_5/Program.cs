@@ -127,7 +127,13 @@ namespace EXERCISE_5
                                     q.displayNumb();
                                 }
                                 break;
-
+                            case'd':
+                                return;
+                            default:
+                                {
+                                    Console.WriteLine("\n Invalid Option ");
+                                    break;
+                                }
                         }
                     }
                 }
