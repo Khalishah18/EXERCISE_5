@@ -54,7 +54,7 @@ namespace EXERCISE_5
                     }
                     Lisa.next = newnode;
                     newnode = Lisa;
-
+                    return;
                 }
 
             }
@@ -70,6 +70,7 @@ namespace EXERCISE_5
             {
                 Node curr;
                 curr = Lisa;
+                Console.WriteLine("The deleted number is: " + Lisa);
                 Lisa = Lisa.next;
             }
 
@@ -135,6 +136,10 @@ namespace EXERCISE_5
                                     break;
                                 }
                         }
+                    }
+                    catch (Exception )
+                    {
+                        Console.WriteLine("\n Check Again! . ");
                     }
                 }
             }
