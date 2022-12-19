@@ -23,7 +23,41 @@ namespace EXERCISE_5
                 Lisa = null;
                 Salsa = null;
             }
+            
+            public void addNumb()
+            {
+                int no;
+                Console.WriteLine("Enter a number: ");
+                no = Convert.ToInt32(Console.ReadLine());
+                Node newnode = new Node();
+                newnode.number = no;
+                if(Lisa == null || (no <= Lisa.number))
+                {
+                    if ((Lisa != null) && (no == Lisa.number))
+                    {
+                        Console.WriteLine("Duplicate Number is not allowed");
+                        return;
+                    }
 
+                    newnode.next = Lisa;
+                    newnode.next = Salsa;
+                    Lisa = Salsa = newnode;
+                    return;
+                }
+
+                while ((Lisa != null) && (no <= Lisa.number)) ;
+                {
+                    if (no == Lisa.number)
+                    {
+                        Console.WriteLine("Duplicate Number is not allow ");
+                        return;
+                    }
+                    Lisa.next = newnode;
+                    newnode = Lisa;
+
+                }
+
+            }
         }
         static void Main(string[] args)
         {
