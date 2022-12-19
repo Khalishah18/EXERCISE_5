@@ -11,6 +11,7 @@ namespace EXERCISE_5
         class Node
         {
             public int number;
+            public string name;
             public Node next;
         }
 
@@ -27,10 +28,14 @@ namespace EXERCISE_5
             public void addNumb()
             {
                 int no;
+                string nm;
                 Console.WriteLine("Enter a number: ");
                 no = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter Name :");
+                nm = Console.ReadLine();
                 Node newnode = new Node();
                 newnode.number = no;
+                newnode.name = nm;
                 if(Lisa == null || (no <= Lisa.number))
                 {
                     if ((Lisa != null) && (no == Lisa.number))
