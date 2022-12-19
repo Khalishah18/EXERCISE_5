@@ -66,15 +66,48 @@ namespace EXERCISE_5
                     return false;
             }
 
-            public bool delNumb()
+            public void delNumb()
             {
                 Node curr;
                 curr = Lisa;
                 Lisa = Lisa.next;
             }
+
+            public void displayNumb()
+            {
+                if (ListEmpty())
+                {
+                    Console.WriteLine("List Empty. ");
+                }
+                else
+                {
+                    Console.WriteLine("the number is the list are: ");
+                    Node currNode;
+                    for(currNode = Lisa; currNode != null; currNode = currNode.next)
+                        Console.WriteLine(" -" + currNode.number);
+                    Console.WriteLine();
+                }
+            }
         }
-        static void Main(string[] args)
+        class program
         {
+            static void Main(string[] args)
+            {
+                Queue q = new Queue();
+                while (true)
+                {
+                    try
+                    {
+                        Console.WriteLine("-----Menu-----");
+                        Console.WriteLine("a. insert number");
+                        Console.WriteLine("b. delete number");
+                        Console.WriteLine("c. display");
+                        Console.WriteLine("d. Exit");
+                        Console.WriteLine(" choice a-d : ");
+                        
+                    }
+                }
+            }
         }
     }
 }
